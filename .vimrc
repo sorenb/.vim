@@ -3,6 +3,14 @@ set expandtab
 set tabstop=4
 set shiftwidth=4
 set nu
+ 
+" fix up the backspace
+set backspace=2 " make backspace work normal (non-vi style)
+set whichwrap+=<,>,h,l  " backspace and cursor keys wrap to next/prev lines
+
+" permanent status line
+set laststatus=2
+set statusline=%<%f%=\ [%1*%M%*%n%R]\ y\ %-19(%3l,%02c%03V%)
 
 " function to insert C++ class template quickly from file 
 function! Class()
