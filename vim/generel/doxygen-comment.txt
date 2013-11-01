@@ -1,0 +1,11 @@
+/**
+ * <A short one line description>
+ *
+ * <Longer description>
+ * <May span multiple lines or paragraphs as needed>
+ *
+ * @param  Description of method's or function's input parameter
+ * @param  ...
+ * @return Description of the return value
+ */
+

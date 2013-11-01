@@ -1,0 +1,35 @@
+/*
+ * Typically you would put the class definition in a header.
+ * This template is based on that premise, therefore the
+ * inclusion guards. 
+ * Name your file e.g. myClass.hpp 
+ * The actual implmentation of the functions you would put in
+ * a cpp file with a corresponding name i.e. myClass.cpp
+ * cf. the principle of separating interface and implmentation
+ * Accessors are often left in the class file / header
+ * since they are typically just one line.
+ */
+
+#ifndef DATE_H
+#define DATE_H
+
+class Date
+{
+private:
+    int m_nMonth;
+    int m_nDay;
+    int m_nYear;
+
+    Date() { } // private default constructor
+
+public:
+    Date(int nMonth, int nDay, int nYear);
+
+    void SetDate(int nMonth, int nDay, int nYear);
+
+    int GetMonth() { return m_nMonth; }
+    int GetDay()  { return m_nDay; }
+    int GetYear() { return m_nYear; }
+};
+
+#endif
