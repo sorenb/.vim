@@ -1,3 +1,7 @@
+execute pathogen#infect()
+syntax on
+filetype plugin indent on
+
 " set tab and indent related prefs and turn on line numbers
 set expandtab
 set tabstop=4
@@ -44,6 +48,9 @@ nmap <F3> :call Webpage()<CR>
 nmap <F4> :call Malloc()<CR>
 nmap <F5> :call Doxygen()<CR>
 nmap <F6> :call Forloop()<CR>
+
+" Switch case
+nmap <F8> <Esc>g~iwea
 
 " map 'o' key and esc to <CR> i.e. Enter key, so that a new line
 " is inserted under current line when hitting enter when not in
