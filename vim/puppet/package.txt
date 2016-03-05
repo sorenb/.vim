@@ -1,0 +1,3 @@
+package{'':
+	ensure => 'installed',
+}

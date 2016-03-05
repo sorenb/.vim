@@ -1,0 +1,8 @@
+file {'/path':
+	source => 'puppet:///modules/
+	owner => 'root',
+	group => 'root',
+	mode => '640',
+	notify => Service[''], 
+	require => Package[''],
+}
