@@ -61,16 +61,18 @@ nmap <F4> :call Malloc()<CR>
 nmap <F5> :call Doxygen()<CR>
 nmap <F6> :call Forloop()<CR>
 
-" nmap <F8> <Esc>g~iwea<Esc>
-nmap <F8> <Esc>g~w<Esc>
-nmap <F9> <Esc>d$<Esc>
+" switch case of current word(?) 
+nmap <F7> <Esc>g~w<Esc>
+
+" delete to end of line
+nmap <F8> <Esc>d$<Esc>
 
 " N.B! you cannot easily map anything to shift- or ctrl- with function keys!
 
 " the puppet trifecta
-nmap <C-1> :call Puppetpackage()<CR>
-nmap <C-2> :call Puppetfile()<CR>
-nmap <C-3> :call Puppetservice()<CR>
+nmap <F9> :call Puppetpackage()<CR>
+nmap <F10> :call Puppetfile()<CR>
+nmap <F12> :call Puppetservice()<CR>
 
 " map 'o' key and esc to <CR> i.e. Enter key, so that a new line
 " is inserted under current line when hitting enter when not in
